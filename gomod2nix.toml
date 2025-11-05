@@ -4,3 +4,9 @@ schema = 3
   [mod."github.com/Dadido3/go-typst"]
     version = "v0.6.0"
     hash = "sha256-+xpS3pjRap0kiGPKHsoox6f1fXsQZm+GGp51SvtUf0M="
+  [mod."github.com/smasher164/xid"]
+    version = "v0.1.2"
+    hash = "sha256-UKqvh3YhxrGwIwV2mZT42lNvZM0+AmnuzQmJqaE7PSc="
+  [mod."golang.org/x/text"]
+    version = "v0.3.3"
+    hash = "sha256-kiauoT7vd7Mh2AW7TnceQyoCDsARxWkDZu1OSD9dCZw="
