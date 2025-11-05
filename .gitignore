@@ -4,3 +4,6 @@ result-*
 
 # Ignore automatically generated direnv output
 .direnv
+
+# Ignore directory I'm using for testing stuff
+testing/
