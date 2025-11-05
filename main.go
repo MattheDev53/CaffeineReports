@@ -12,7 +12,8 @@ func NoImp() {
 }
 
 func PrintUsage() {
-	argZeroList := strings.Split(os.Args[0], "/")
+
+	argZeroList := strings.Split(os.Args[0], string(os.PathSeparator))
 	filename := argZeroList[len(argZeroList)-1]
 	fmt.Printf("Usage of %s:\n", filename)
 	fmt.Printf("%s help : Prints this help message\n", filename)
