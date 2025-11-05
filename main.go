@@ -24,7 +24,6 @@ func GenerateReport(data string, template string, output string) {
 }
 
 func main() {
-	fmt.Println(len(os.Args))
 	if len(os.Args) <= 1 {
 		fmt.Println("No arguments provided")
 		PrintUsage()
