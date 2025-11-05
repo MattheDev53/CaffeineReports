@@ -1,3 +1,6 @@
-schema = 1
+schema = 3
 
 [mod]
+  [mod."github.com/Dadido3/go-typst"]
+    version = "v0.6.0"
+    hash = "sha256-+xpS3pjRap0kiGPKHsoox6f1fXsQZm+GGp51SvtUf0M="
