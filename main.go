@@ -13,7 +13,7 @@ func NoImp() {
 
 // TODO: Figure out how to read the Git Tag
 func PrintVersion () {
-	fmt.Printf("CaffeineReports %s\n", "v0.1.0")
+	fmt.Printf("CaffeineReports %s\n", "v0.1.1")
 	fmt.Printf("")
 }
 

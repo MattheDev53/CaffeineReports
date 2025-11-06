@@ -15,7 +15,7 @@
 
 buildGoApplication {
   pname = "caffeine-reports";
-  version = "0.1.0";
+  version = "0.1.1";
   pwd = ./.;
   src = ./.;
   modules = ./gomod2nix.toml;
