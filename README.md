@@ -30,4 +30,6 @@ Good luck, make a Pull Request if you find out.
 Usage of CaffeineReports:
 CaffeineReports help : Prints this help message
 CaffeineReports generate [template] [data] [output] : generates a report from the provided data and template
+CaffeineReports version : Prints Version Information
+CaffeineReports credits : Prints Credits
 ```

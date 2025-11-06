@@ -11,13 +11,34 @@ func NoImp() {
 	fmt.Println("!! Not Implemented : Nothing will be done")
 }
 
-func PrintUsage() {
+// TODO: Figure out how to read the Git Tag
+func PrintVersion () {
+	fmt.Printf("CaffeineReports %s\n", "v0.1.0")
+	fmt.Printf("")
+}
 
+func PrintCredits() {
+	PrintLogo()
+	fmt.Println("Author & Maintainer: MattheDev53")
+	fmt.Println("GitHub: https://github.com/MattheDev53/CaffeineReports")
+	fmt.Println("")
+	fmt.Println("CaffeineReports is Open Source under the GNU AGPLv3")
+	// fmt.Println("                                                                               ")
+}
+
+func GetSelfFilename() string {
 	argZeroList := strings.Split(os.Args[0], string(os.PathSeparator))
 	filename := argZeroList[len(argZeroList)-1]
+	return filename
+}
+
+func PrintUsage() {
+	filename := GetSelfFilename()
 	fmt.Printf("Usage of %s:\n", filename)
 	fmt.Printf("%s help : Prints this help message\n", filename)
 	fmt.Printf("%s generate [template] [data] [output] : generates a report from the provided data and template\n", filename)
+	fmt.Printf("%s version : Prints Version Information\n", filename)
+	fmt.Printf("%s credits : Prints Credits\n", filename)
 }
 
 func GenerateReport(templateFile string, dataFile string, outputFile string) {
@@ -69,6 +90,12 @@ func main() {
 		default:
 			PrintUsage()
 			os.Exit(3)
+		case "version":
+			PrintVersion()
+			os.Exit(0)
+		case "credits":
+			PrintCredits()
+			os.Exit(0)
 		case "help":
 			PrintUsage()
 			os.Exit(0)
@@ -80,4 +107,13 @@ func main() {
 			GenerateReport(os.Args[2], os.Args[3], os.Args[4])
 			os.Exit(0)
 	}
+}
+
+func PrintLogo() {
+	fmt.Println("   ______      ________     _            ____                        __      ")
+	fmt.Println(`  / ____/___ _/ __/ __/__  (_)___  ___  / __ \___  ____  ____  _____/ /______`)
+	fmt.Println(" / /   / __ `/ /_/ /_/ _ \\/ / __ \\/ _ \\/ /_/ / _ \\/ __ \\/ __ \\/ ___/ __/ ___/")
+	fmt.Println("/ /___/ /_/ / __/ __/  __/ / / / /  __/ _, _/  __/ /_/ / /_/ / /  / /_(__  ) ")
+	fmt.Println(`\____/\__,_/_/ /_/  \___/_/_/ /_/\___/_/ |_|\___/ .___/\____/_/   \__/____/  `)
+	fmt.Println("                                               /_/                           ")
 }
