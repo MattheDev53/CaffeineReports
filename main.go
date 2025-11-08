@@ -5,6 +5,8 @@ import (
 	"os"
 	"strings"
 	typst "github.com/Dadido3/go-typst"
+	"fyne.io/fyne/v2/app"
+	"fyne.io/fyne/v2/widget"
 )
 
 func NoImp() {
@@ -98,6 +100,9 @@ func main() {
 		case "help":
 			PrintUsage()
 			os.Exit(0)
+		case "gui":
+			StartApp()
+			os.Exit(0)
 		case "generate":
 			if len(os.Args) != 5 {
 				fmt.Printf("Invalid number of arguments (%d provided, 3 expected)\n", len(os.Args)-2)
@@ -115,4 +120,12 @@ func PrintLogo() {
 	fmt.Println("/ /___/ /_/ / __/ __/  __/ / / / /  __/ _, _/  __/ /_/ / /_/ / /  / /_(__  ) ")
 	fmt.Println(`\____/\__,_/_/ /_/  \___/_/_/ /_/\___/_/ |_|\___/ .___/\____/_/   \__/____/  `)
 	fmt.Println("                                               /_/                           ")
+}
+
+func StartApp() {
+	a := app.New()
+	w := a.NewWindow("Caffeine Reports")
+
+	w.SetContent(widget.NewLabel("Hello, World!"))
+	w.ShowAndRun()
 }

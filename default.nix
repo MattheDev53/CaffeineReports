@@ -19,4 +19,22 @@ buildGoApplication {
   pwd = ./.;
   src = ./.;
   modules = ./gomod2nix.toml;
+
+  buildInputs = with pkgs; [
+    xorg.libX11
+    xorg.libXrandr
+    xorg.libXcursor
+    xorg.libXinerama
+    xorg.xinput
+    xorg.libXi
+    xorg.libXxf86vm
+    libxkbcommon
+    wayland
+
+    libGL
+  ];
+
+  nativeBuildInputs = with pkgs; [
+    pkg-config
+  ];
 }

@@ -22,5 +22,20 @@ pkgs.mkShell {
     goEnv
     gomod2nix
     pkgs.typst
+    pkgs.fyne
+
+    pkgs.xorg.libX11
+    pkgs.xorg.libXrandr
+    pkgs.xorg.libXcursor
+    pkgs.xorg.libXinerama
+    pkgs.xorg.xinput
+    pkgs.xorg.libXi
+    pkgs.xorg.libXxf86vm
+    pkgs.libxkbcommon
+    pkgs.wayland
+
+    pkgs.libGL
+
+    pkgs.pkg-config
   ];
 }
