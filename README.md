@@ -1,4 +1,4 @@
-# CaffeineReports
+# Caffeine Reports
 
 Simple Go CLI for generating PDF Reports with Typst
 
@@ -31,9 +31,9 @@ Good luck, make a Pull Request if you find out.
 ## How to Use
 
 ```
-Usage of CaffeineReports:
-CaffeineReports help : Prints this help message
-CaffeineReports generate [template] [data] [output] : generates a report from the provided data and template
-CaffeineReports version : Prints Version Information
-CaffeineReports credits : Prints Credits
+Usage of caffeine-reports:
+caffeine-reports help : Prints this help message
+caffeine-reports generate [template] [data] [output] : generates a report from the provided data and template
+caffeine-reports version : Prints Version Information
+caffeine-reports credits : Prints Credits
 ```

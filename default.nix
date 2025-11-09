@@ -37,4 +37,15 @@ buildGoApplication {
   nativeBuildInputs = with pkgs; [
     pkg-config
   ];
+
+  /*
+  desktopItems = [
+    (makeDesktopItem {
+      name = "CaffeineReports";
+      exec = pname;
+      icon = pname;
+      desktopName = pname;
+    })
+  ];
+  */
 }

@@ -1,4 +1,4 @@
-module github.com/MattheDev53/CaffeineReports
+module github.com/MattheDev53/caffeine-reports
 
 go 1.25.2
 
