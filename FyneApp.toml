@@ -1,0 +1,8 @@
+Website = "https://github.com/MattheDev53/caffeine-reports"
+
+[Details]
+Icon = "Icon.png"
+Name = "Caffeine Reports"
+ID = "io.github.matthedev53.CaffeineReports"
+Version = "0.1.2"
+Build = 2
